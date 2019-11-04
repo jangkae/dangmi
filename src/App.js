@@ -53,11 +53,11 @@ export default class App extends React.Component {
             <tr>
               <th>순번</th>
               <th>이름</th>
-              <th>다마</th>
-              <th>현재</th>
-              <th>남음</th>
-              <th>1개당</th>
-              <th>뺌</th>
+              <th>다마(개)</th>
+              <th>현재(개)</th>
+              <th>남음(%)</th>
+              <th>뺌(%)</th>
+              <th>1개당(%)</th>
             </tr>
           </thead>
           <tbody>
