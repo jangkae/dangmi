@@ -55,8 +55,8 @@ export default class App extends React.Component {
               <th>이름</th>
               <th>다마(개)</th>
               <th>현재(개)</th>
-              <th>남음(%)</th>
               <th>뺌(%)</th>
+              <th>남음(%)</th>
               <th>1개당(%)</th>
             </tr>
           </thead>
