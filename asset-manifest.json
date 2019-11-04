@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/dangmi/static/css/main.34de6062.chunk.css",
+    "main.js": "/dangmi/static/js/main.439f0251.chunk.js",
+    "main.js.map": "/dangmi/static/js/main.439f0251.chunk.js.map",
+    "runtime-main.js": "/dangmi/static/js/runtime-main.66058518.js",
+    "runtime-main.js.map": "/dangmi/static/js/runtime-main.66058518.js.map",
+    "static/css/2.d2e2750e.chunk.css": "/dangmi/static/css/2.d2e2750e.chunk.css",
+    "static/js/2.cd50e20b.chunk.js": "/dangmi/static/js/2.cd50e20b.chunk.js",
+    "static/js/2.cd50e20b.chunk.js.map": "/dangmi/static/js/2.cd50e20b.chunk.js.map",
+    "index.html": "/dangmi/index.html",
+    "precache-manifest.845dff7697d104eea39c0bb49bc3ee54.js": "/dangmi/precache-manifest.845dff7697d104eea39c0bb49bc3ee54.js",
+    "service-worker.js": "/dangmi/service-worker.js",
+    "static/css/2.d2e2750e.chunk.css.map": "/dangmi/static/css/2.d2e2750e.chunk.css.map",
+    "static/css/main.34de6062.chunk.css.map": "/dangmi/static/css/main.34de6062.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.66058518.js",
+    "static/css/2.d2e2750e.chunk.css",
+    "static/js/2.cd50e20b.chunk.js",
+    "static/css/main.34de6062.chunk.css",
+    "static/js/main.439f0251.chunk.js"
+  ]
+}
