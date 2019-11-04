@@ -5,9 +5,11 @@
   "homepage": "https://jangkae.github.io/dangmi",
   "dependencies": {
     "bulma": "^0.8.0",
+    "js-cookie": "^2.2.1",
     "lodash": "^4.17.15",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
+    "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0"
   },
   "scripts": {
