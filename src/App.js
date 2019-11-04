@@ -67,9 +67,9 @@ export default class App extends React.Component {
                 <td><input className="input" type="text" name="name" placeholder="Text input" defaultValue={member.name} /></td>
                 <td><input className="input" type="text" name="score" placeholder="Text input" defaultValue={member.score} /></td>
                 <td><input className="input" type="text" name="current" placeholder="Text input" defaultValue={member.current} /></td>
-                <td>{(100/member.score).toFixed(2)}%</td>
                 <td>{(100/member.score*(member.score-member.current)).toFixed(2)}%</td>
                 <td>{(100/member.score*member.current).toFixed(2)}%</td>
+                <td>{(100/member.score).toFixed(2)}%</td>
               </tr>
             ))}
           </tbody>
