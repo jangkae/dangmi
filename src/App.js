@@ -2,12 +2,26 @@ import 'bulma/css/bulma.min.css'
 import _ from 'lodash'
 
 import React from 'react'
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route, Link, Redirect } from 'react-router-dom'
+import { observer, inject } from 'mobx-react'
 
 import Home from './pages/Home'
 import Play from './pages/Play'
 import Over from './pages/Over'
 import Settings from './pages/Settings'
+
+@inject('members')
+@observer
+class MemberRequiredRoute extends React.Component {
+  render() {
+    return (
+      <Route {...this.props}>
+        { this.props.members.isEmptyMembers && (<Redirect to="/settings" />) }
+        { this.props.children }
+      </Route>
+    )
+  }
+}
 
 export default class App extends React.Component {
   render() {
@@ -22,18 +36,19 @@ export default class App extends React.Component {
           </ul>
         </div>
         <Switch>
-          <Route path="/" exact>
+          <MemberRequiredRoute path="/" exact>
             <Home />
-          </Route>
-          <Route path="/play">
+          </MemberRequiredRoute>
+          <MemberRequiredRoute path="/play">
             <Play />
-          </Route>
-          <Route path="/over">
+          </MemberRequiredRoute>
+          <MemberRequiredRoute path="/over">
             <Over />
-          </Route>
+          </MemberRequiredRoute>
           <Route path="/settings">
             <Settings />
           </Route>
+          <Redirect path="*" to="/" />
         </Switch>
       </Router>
     )
